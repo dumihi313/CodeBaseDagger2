@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE resources[<!ENTITY appname "MetamonCodeBase">]>
+<resources>
+    <string name="app_name">&appname;</string>
+    <string name="splash_screen_app_name">&appname;</string>
+
+    <string name="pressed_back_to_exit">Bấm trở về một lần nữa để đóng ứng dụng</string>
+    <string name="space_live_label_text">live</string>
+    <string name="stream_detail_open_chat_title">Add comment...</string>
+    <string name="text_new_message">Tin nhắn mới</string>
+    <string name="media_url_dash"><![CDATA[https://www.youtube.com/api/manifest/dash/id/bf5bb2419360daf1/source/youtube?as=fmp4_audio_clear,fmp4_sd_hd_clear&sparams=ip,ipbits,expire,source,id,as&ip=0.0.0.0&ipbits=0&expire=19000000000&signature=51AF5F39AB0CEC3E5497CD9C900EBFEAECCCB5C7.8506521BFC350652163895D4C26DEE124209AA9E&key=ik0]]></string>
+
+    <string name="login_label">Đăng nhập</string>
+    <string name="login_method_label">Đăng nhập với</string>
+    <string name="policy">Đăng nhập là bạn đã đồng ý với điều khoản và chính sách của &appname;.</string>
+    <string name="message_login_fail">Đăng nhập %1$s thất bại. Lỗi %2$s.</string>
+    <string name="login_failure_reason_no_account">Tài khoản không tồn tại</string>
+    <string name="login_failure_reason_no_token">Không có token</string>
+    <string name="login_cancel_message">Bạn đã hủy đăng nhập</string>
+    <string name="no_network_connection">Không có kết nối mạng</string>
+    <string name="no_network_connection_toast">Không có kết nối mạng. Vui lòng thử lại.</string>
+
+</resources>

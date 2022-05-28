@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE resources[<!ENTITY appname "MetamonCodeBase">]>
+<resources>
+    <string name="app_name">&appname;</string>
+    <string name="splash_screen_app_name">&appname;</string>
+
+    <string name="pressed_back_to_exit">Press back again to quit</string>
+    <string name="space_live_label_text">live</string>
+    <string name="stream_detail_open_chat_title">Add comment...</string>
+    <string name="text_new_message">Tin nhắn mới</string>
+    <string name="media_url_dash"><![CDATA[https://www.youtube.com/api/manifest/dash/id/bf5bb2419360daf1/source/youtube?as=fmp4_audio_clear,fmp4_sd_hd_clear&sparams=ip,ipbits,expire,source,id,as&ip=0.0.0.0&ipbits=0&expire=19000000000&signature=51AF5F39AB0CEC3E5497CD9C900EBFEAECCCB5C7.8506521BFC350652163895D4C26DEE124209AA9E&key=ik0]]></string>
+
+    <string name="login_label">Login</string>
+    <string name="login_method_label">Login by</string>
+    <string name="policy">Login means you agree Terms of use, Privacy Policy powered by &appname;</string>
+    <string name="message_login_fail">Failed to login %1$s. Error: %2$s.</string>
+    <string name="login_failure_reason_no_account">Account does not exist</string>
+    <string name="login_failure_reason_no_token">No token</string>
+    <string name="login_cancel_message">You have canceled your login</string>
+    <string name="no_network_connection">No network connection</string>
+    <string name="no_network_connection_toast">No network connection. Please try again later.</string>
+
+</resources>

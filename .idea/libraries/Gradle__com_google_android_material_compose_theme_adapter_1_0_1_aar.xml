@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.material:compose-theme-adapter:1.0.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/99fa5fc05a4fc9b04fd8fb36475d7eff/transformed/jetified-compose-theme-adapter-1.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/99fa5fc05a4fc9b04fd8fb36475d7eff/transformed/jetified-compose-theme-adapter-1.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/99fa5fc05a4fc9b04fd8fb36475d7eff/transformed/jetified-compose-theme-adapter-1.0.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.material/compose-theme-adapter/1.0.1/89fd5e63182c3b6a5382061b1c43156ac0c14eb5/compose-theme-adapter-1.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.material/compose-theme-adapter/1.0.1/d71fad074f11a40b3416263f9ee5b9c5adba9ebb/compose-theme-adapter-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

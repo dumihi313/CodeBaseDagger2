@@ -1,0 +1,4 @@
+include(
+        "depconstraints",
+        ":app",
+)

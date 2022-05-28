@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_95">
+
+    <View
+        android:id="@+id/switchEnvironmentBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:background="@color/black_20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/closeBtn"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/black" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/ic_logo"
+        app:layout_constraintBottom_toTopOf="@id/label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/sf_pro_text_bold"
+        android:text="@string/login_label"
+        android:textAllCaps="true"
+        android:textColor="#272727"
+        android:textSize="21sp"
+        app:layout_constraintBottom_toTopOf="@id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo" />
+
+    <!-- input email -->
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/sf_pro_text_regular"
+        android:hint="Email"
+        android:lines="1"
+        android:maxLines="1"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black_50"
+        android:textSize="18sp"
+        app:backgroundTint="@color/black_20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label" />
+
+    <!-- pass title -->
+    <EditText
+        android:id="@+id/passInput"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/sf_pro_text_regular"
+        android:hint="Password"
+        android:lines="1"
+        android:maxLines="1"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black_50"
+        android:textSize="18sp"
+        app:backgroundTint="@color/black_20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailInput" />
+
+    <!-- Button Login Google -->
+    <Button
+        android:id="@+id/loginEmailBtn"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_space_live_label"
+        android:text="Login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passInput" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="108dp"
+        android:background="@color/black_20"
+        app:layout_constraintBottom_toTopOf="@id/methodLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loginEmailBtn" />
+
+    <TextView
+        android:id="@+id/methodLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/sf_pro_text_regular"
+        android:text="@string/login_method_label"
+        android:textColor="#E6272727"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/loginButtonTopAnchor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider" />
+
+    <Space
+        android:id="@+id/loginButtonTopAnchor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@id/loginButtonBottomAnchor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/methodLabel" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/loginFacebookBtn"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="28dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_login_facebook"
+        app:layout_constraintEnd_toStartOf="@id/loginGoogleBtn"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loginButtonTopAnchor" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/loginGoogleBtn"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_login_google"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/loginFacebookBtn"
+        app:layout_constraintTop_toBottomOf="@id/loginButtonTopAnchor" />
+
+    <Space
+        android:id="@+id/loginButtonBottomAnchor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loginButtonTopAnchor" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

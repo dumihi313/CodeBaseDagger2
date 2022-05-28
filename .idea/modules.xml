@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CodeBaseDagger2.iml" filepath="$PROJECT_DIR$/.idea/modules/CodeBaseDagger2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/CodeBaseDagger2.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/CodeBaseDagger2.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CodeBaseDagger2.buildSrc.iml" filepath="$PROJECT_DIR$/.idea/modules/CodeBaseDagger2.buildSrc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/depconstraints/CodeBaseDagger2.depconstraints.iml" filepath="$PROJECT_DIR$/.idea/modules/depconstraints/CodeBaseDagger2.depconstraints.iml" />
+    </modules>
+  </component>
+</project>

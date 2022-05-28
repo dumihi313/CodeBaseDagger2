@@ -1,0 +1,184 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "vn.metamon2.grpc";
+option java_outer_classname = "Metamon2";
+package api;
+/*
+    Vesion 0.1.1
+*/
+
+service Public {
+    rpc SignIn(SignInRequest) returns (SignInResponse) {}
+    rpc GetConfigs(GetConfigsRequest) returns (GetConfigsResponse) {} // @since 0.1.1
+    // all methods below required accessToken metadata
+    rpc GetUniSpaces(GetUniSpacesRequest) returns (GetUniSpacesResponse);
+    rpc GetSpaces(GetSpacesRequest) returns (GetSpacesResponse);
+
+    rpc GetKingdom(GetKingdomRequest) returns (GetKingdomResponse);
+    rpc GetMetamon(GetMetamonRequest) returns (GetMetamonResponse);
+}
+
+message Kingdom {
+    int32 id = 1;
+    string name = 2;
+    repeated string urls = 3;
+    bool is_active = 4;
+}
+
+message GetKingdomRequest {
+
+}
+
+message GetKingdomResponse {
+    Status status = 1;
+    repeated Kingdom kingdoms = 2;
+}
+
+
+message GetMetamonRequest {
+    int32 kingdom_id = 1;
+}
+
+message GetMetamonResponse {
+    Status status = 1;
+    repeated Metamon metamon = 2;
+}
+
+message Metamon {
+    int32 mon_id = 1;
+    int32 kingdom_id = 2;
+    string rarity = 3;
+    bool status = 4;
+    string name = 5;
+}
+
+
+// data messages
+message DeviceInfo {
+    string device_id = 1;
+    string device_name = 2;
+    string app_version = 3;
+    string platform = 4;
+}
+
+message UserProfile {
+    int32 uid = 1;
+    string display_name = 2;
+
+    // optional fields
+    int32 gender = 10;
+    string signature = 11;
+    repeated UserProfile top_fan = 13;
+    string gg_uid = 14;
+    string fb_uid = 15;
+    int32 n_follower = 16;
+    int32 n_followee = 17;
+    int32 level = 18;
+
+}
+
+// request/response messages
+message Status {
+    int32 code = 1;
+    string message = 2;
+}
+
+message SignInRequest {
+    DeviceInfo device = 1;
+    bool auto_create = 2;
+    
+    oneof login_info {
+        Google google = 3;
+        Facebook facebook = 4;
+        Apple apple = 5;
+        EmailPassword email_passwd = 6;
+    }
+    message EmailPassword {
+        string email = 1;
+        string passwd = 2;
+    }
+
+    message Google {
+        string id_token = 2;
+    }
+
+    message Facebook {
+        string token = 2;
+    }
+
+    message Apple {
+        string auth_code = 1;
+        string display_name = 2;
+        string user_id = 3;
+        string email = 4;
+    }
+}
+
+message SignInResponse {
+    Status status = 1;
+    UserProfile profile = 2;
+    string access_token = 3;
+}
+
+
+message UniSpace {
+    int32 id = 1;
+    string name = 2;
+    repeated string urls = 3;
+    bool is_active = 4;
+}
+
+message GetUniSpacesRequest {
+
+}
+
+message GetUniSpacesResponse {
+    Status status = 1;
+    repeated UniSpace uni_space = 2;
+}
+
+message Space {
+    int32 space_id = 1;
+    int32 uni_space_id = 2;
+    string rarity = 3;
+    bool status = 4;
+    int32 total_subsciber = 5;
+    int32 total_view = 6;
+    int32 total_share = 7;
+    int32 total_heart = 8;
+    int32 total_donate = 9;
+    string name = 10;
+    string cover = 11;
+}
+
+message GetSpacesRequest {
+    int32 uni_id = 1;
+}
+
+message GetSpacesResponse {
+    Status status = 1;
+    repeated Space space = 2;
+}
+
+message GetUserProfileRequest {
+    int32 uid = 1;
+    repeated string fields = 2;
+}
+
+message GetUserProfileResponse {
+    Status status = 1;
+    UserProfile profile = 2;
+}
+
+/*
+    @since 0.1.1
+*/
+message GetConfigsRequest {
+    int32 platform = 1;
+}
+
+message GetConfigsResponse {
+    Status status = 1;
+    string config_json = 2;
+}

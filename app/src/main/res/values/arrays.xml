@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="MainTabSelectedDrawable">
+        <item>@drawable/ic_monster_selected</item>
+        <item>@drawable/ic_monster_selected</item>
+        <item>@drawable/ic_monster_selected</item>
+        <item>@drawable/ic_monster_selected</item>
+    </array>
+
+    <array name="MainTabUnselectedDrawable">
+        <item>@drawable/ic_monster</item>
+        <item>@drawable/ic_monster</item>
+        <item>@drawable/ic_monster</item>
+        <item>@drawable/ic_monster</item>
+    </array>
+</resources>

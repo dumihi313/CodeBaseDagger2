@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.facebook.fresco:drawee:1.8.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/85038f607557858a36ae7d7119d287b9/transformed/jetified-drawee-1.8.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/85038f607557858a36ae7d7119d287b9/transformed/jetified-drawee-1.8.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/85038f607557858a36ae7d7119d287b9/transformed/jetified-drawee-1.8.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.fresco/drawee/1.8.1/e013863cce594503b0a7bcd98a74053d052f1b71/drawee-1.8.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.fresco/drawee/1.8.1/7f12ecc4d05775ec1ecc1910b3b561e1864149a0/drawee-1.8.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

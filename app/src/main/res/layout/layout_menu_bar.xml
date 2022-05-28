@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:background="@color/color_121421"
+    android:layout_height="50dp">
+
+    <FrameLayout
+        android:id="@+id/btnBack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_back_caret"
+            app:tint="@color/black_50"
+            tools:ignore="ContentDescription" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/MenuBarTitle"
+        android:layout_marginStart="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnBack"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Send" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

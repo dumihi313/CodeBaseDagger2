@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.accompanist:accompanist-swiperefresh:0.17.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/db7e16eada0cf55f9007ef4efa938892/transformed/jetified-accompanist-swiperefresh-0.17.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/db7e16eada0cf55f9007ef4efa938892/transformed/jetified-accompanist-swiperefresh-0.17.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/db7e16eada0cf55f9007ef4efa938892/transformed/jetified-accompanist-swiperefresh-0.17.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.accompanist/accompanist-swiperefresh/0.17.0/7703172f8884ab016f2c97ac911f189d85754f68/accompanist-swiperefresh-0.17.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.accompanist/accompanist-swiperefresh/0.17.0/740022a1f12a76d69904f5ef85355347ad5c06a6/accompanist-swiperefresh-0.17.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
